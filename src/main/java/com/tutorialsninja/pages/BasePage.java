@@ -21,7 +21,6 @@ public abstract class BasePage {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
-        logger.info("Initializing webDriver {}" , driver.getTitle());
     }
 
     protected void waitForElementToBeClickable(WebElement element) {
