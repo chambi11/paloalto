@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Palo Alto Automation Suite" verbose="2">
+    <parameter name="browser" value="chrome"/>
+
+    <test name="TutorialsNinja Tests" preserve-order="true">
+        <classes>
+            <class name="com.tutorialsninja.tests.BaseTest">
+                <methods>
+                    <include name="testSortAlphabeticallyAscending"/>
+                    <include name="ipodStorage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
